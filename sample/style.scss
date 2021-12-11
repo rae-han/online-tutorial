@@ -1,0 +1,18 @@
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  background: green;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+
+  .menu-item {
+    height: 40px;
+    border-top: 1px solid #fff;
+  }
+}
+.section {
+  text-align: center;
+}
