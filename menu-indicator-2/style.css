@@ -20,12 +20,11 @@ body {
 body .navigation {
   position: relative;
   width: 400px;
-  height: 70px;
+  height: 60px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
 }
 body .navigation ul {
   display: flex;
@@ -35,8 +34,8 @@ body .navigation ul li {
   position: relative;
   list-style: none;
   width: 70px;
-  height: 70px;
-  z-index: 1;
+  height: 60px;
+  z-index: 2;
 }
 body .navigation ul li a {
   position: relative;
@@ -50,27 +49,32 @@ body .navigation ul li a {
 body .navigation ul li a .icon {
   position: relative;
   display: block;
-  line-height: 75px;
+  line-height: 65px;
   font-size: 1.5em;
   text-align: center;
   transition: 0.5s;
-  color: var(--clr);
+  color: #222327;
 }
 body .navigation ul li a .text {
   position: absolute;
-  color: var(--clr);
+  background: #2196f3;
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 12px;
   font-weight: 400;
   font-size: 0.75em;
   letter-spacing: 0.05em;
   opacity: 0;
   transition: 0.5s;
+  transform: translateY(15px);
 }
 body .navigation ul li.active a .icon {
   transform: translateY(-32px);
+  color: #2196f3;
 }
 body .navigation ul li.active a .text {
   opacity: 1;
-  transform: translateY(10px);
+  transform: translateY(-4px);
 }
 body .navigation ul li:nth-child(1).active ~ .indicator {
   transform: translateX(0px);
@@ -89,35 +93,35 @@ body .navigation ul li:nth-child(5).active ~ .indicator {
 }
 body .navigation ul .indicator {
   position: absolute;
-  top: -50%;
+  top: -35px;
   width: 70px;
   height: 70px;
-  background: skyblue;
+  background: #fff;
   border-radius: 50%;
-  border: 6px solid var(--clr);
+  z-index: 1;
   transition: 0.5s;
 }
 body .navigation ul .indicator::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: -22px;
-  width: 20px;
-  height: 20px;
+  top: 5px;
+  left: -28px;
+  width: 30px;
+  height: 30px;
   background: transparent;
-  border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0 var(--clr);
+  border-radius: 50%;
+  box-shadow: 15px 18px #fff;
 }
 body .navigation ul .indicator::after {
   content: "";
   position: absolute;
-  top: 50%;
-  right: -22px;
-  width: 20px;
-  height: 20px;
+  top: 5px;
+  right: -28px;
+  width: 30px;
+  height: 30px;
   background: transparent;
-  border-top-left-radius: 20px;
-  box-shadow: -1px -10px 0 0 var(--clr);
+  border-radius: 50%;
+  box-shadow: -15px 18px #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
